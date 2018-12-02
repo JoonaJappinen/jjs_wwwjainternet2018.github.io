@@ -2,11 +2,137 @@
 <html>
 
 <head>
-	<title>title2018</title>
+	<title>WWW&Internet2018</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+<!--formValidationScript------------------------------------------------------------->
+	<script>
+		function formValidation()
+		{
+			if(document.forms["unnecessaryForm"]["emailField"].value==null || document.forms["unnecessaryForm"]["emailField"].value=="")
+			{
+				alert("Email is required");
+				return false;
+			}
+			return true;
+		}
+		
+	var x = document.getElementById("locationOutput");
+	</script>
+<!------------------------------------------------------------------------------------>
+
 </head>
 
 <body>
-	<h1>HeaderOne</h1>
+
+	<header>
+		<table id="headertable">
+			<tr>
+				<td><img src="media/GooLogo.svg" id="Logo"></img></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</header>
+
+	
+
+	<div id="mainblock">
+<!------------------------------------------------------------------------------------>
+		<div id="video" class="box">
+			<video width="auto" height="100%" controls>
+			  <source src="media/gameplay.mp4" type="video/mp4">
+			</video>
+			
+			<script>
+			document.getElementsByTagName('video')[0].volume = 0.2;
+			</script>
+			
+		</div>
+<!------------------------------------------------------------------------------------>		
+		<div id="formBox" class="box">
+			<form name="unnecessaryForm" method="post" onsubmit="return formValidation()">	
+				<div>
+					<label for="mail">E-mail:</label>
+					<input type="email" id="mail" name="emailField">
+				</div>
+				<div>
+					<label for="msg">Message:</label>
+					<textarea id="msg" name="user_message"></textarea>
+				</div>
+				
+				<div class="button">
+    				<button type="submit">Send your message</button>
+  				</div>
+			</form>
+		</div>
+<!------------------------------------------------------------------------------------>
+		<div id="listHolder" class="box">
+			<p>This is a list:<br></p>
+			<ul>
+			  <li>Goo</li>
+			  <li>Slime</li>
+			  <li>Blob</li>
+			</ul>
+		</div>
+<!------------------------------------------------------------------------------------>			
+		<div id="locationGetter" class="box">
+			<button onclick="getLocation()">Try It</button>
+			<p id="locationOutput" style="outline: 1px solid black;"></p>
+			
+			<script>
+				var x = document.getElementById("locationOutput");
+
+				function getLocation() {
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition);
+					} else { 
+						x.innerHTML = "Geolocation could not be retrieved or the browser doesn't support it.";
+					}
+				}
+
+				function showPosition(position) {
+					x.innerHTML = "Latitude: " + position.coords.latitude + 
+					"<br>Longitude: " + position.coords.longitude;
+				}
+			</script>
+		</div>
+<!------------------------------------------------------------------------------------>		
+		<div id="dragNdrop" class="box">
+			
+			<script>
+				function allowDrop(ev) {
+					ev.preventDefault();
+				}
+
+				function drag(ev) {
+					ev.dataTransfer.setData("text", ev.target.id);
+				}
+
+				function drop(ev) {
+					ev.preventDefault();
+					var data = ev.dataTransfer.getData("text");
+					ev.target.appendChild(document.getElementById(data));
+				}
+			</script>
+			
+			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<br>
+			<img id="drag1" src="media/GooLogo.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+			
+			
+			
+			
+			
+			
+			
+		</div>
+<!------------------------------------------------------------------------------------>
+	</div>
+
 </body>
+
+
 
 </html>
