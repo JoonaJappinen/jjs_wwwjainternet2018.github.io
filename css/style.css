@@ -47,6 +47,11 @@ navigation menu {
 	display:inline;
 }
 
+.buttons {
+	width:20%;
+	height:20%;
+}
+
 .home {
 	content:url(../media/buttons/home.svg);
 	width:20%;
