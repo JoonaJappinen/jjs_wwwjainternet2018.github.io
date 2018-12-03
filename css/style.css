@@ -64,23 +64,20 @@ navigation menu {
 
 #mainText{
 	font-family:chango;
-	height:200px;
-	padding:0px 5% 5% 8%;
+	padding:0px 5% 0px 8%;
 	margin:auto;	
 	color:#1D4417;
-	padding:auto;
 	font-size:24px;
 }
 
 .box {	
 	display: block;
-	height: 400px;
 	width: 80%;
 	margin:5% auto 5% auto;
 }
 
 #uselessForm{
-	padding: 15% 0% 0% 0%;
+	padding: 5% 0% 0% 0%;
 	text-align:center;
 	margin:0 auto;
 }
