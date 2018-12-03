@@ -1,4 +1,4 @@
-@font-face { font-family: chango; src: url(fonts/chango-regular.tff);}
+@font-face { font-family: chango; src: url(fonts/chango-regular.ttf);}
 
 body {
 	background-repeat: no-repeat;
@@ -12,10 +12,8 @@ header {
 	height: 100px;
 }
 
-#Logo {
-	
+#Logo {	
 	 height:60%; 
-
 	 padding-top: 5px;
 	 padding-right: 20px;
 }
