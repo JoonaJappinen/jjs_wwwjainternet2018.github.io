@@ -52,51 +52,6 @@ navigation menu {
 	height:20%;
 }
 
-.home {
-	content:url(../media/buttons/home.svg);
-	width:20%;
-	height:20%;
-}
-
-.home:hover {
-	content:url(../media/buttons/homeHover.svg);
-}
-
-.media {
-	content:url(../media/buttons/video.svg);
-	width:20%;
-	height:20%;
-}
-
-.media:hover {
-	content:url(../media/buttons/videoHover.svg);
-}
-
-.form {
-	content:url(../media/buttons/form.svg);
-	width:20%;
-	height:20%;
-}
-
-.form:hover {
-	content:url(../media/buttons/formHover.svg);
-}
-
-.location {
-	content:url(../media/buttons/location.svg);
-	width:20%;
-	height:20%;
-}
-
-.location:hover {
-	content:url(../media/buttons/locationHover.svg);
-}
-
-.active {
-	width:20%;
-	height:20%;
-}
-
 #mainblock {
 	margin:5% auto 5% auto;
 	background:#2E9940;

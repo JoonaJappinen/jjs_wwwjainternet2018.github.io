@@ -35,10 +35,10 @@
 
 	<div id="navigation">
 		<menu>
-			<li><a href="index.html"><img class="home"></a></li>
-			<li><img src="media/buttons/videoActive.svg" class="active"></img></li>
-			<li><a href="form.html"><img class="form"></img></a></li>
-			<li><a href="location.html"><img class="location"></img></a></li>
+			<li><a href="index.html"><img class="buttons" src="media/buttons/home.svg" onmouseover="this.src='media/buttons/homeHover.svg';" onmouseout="this.src='media/buttons/home.svg';"></img></a></li>
+			<li><img src="media/buttons/videoActive.svg" class="buttons"></img></li>
+			<li><a href="form.html"><img class="buttons" src="media/buttons/form.svg" onmouseover="this.src='media/buttons/formHover.svg';" onmouseout="this.src='media/buttons/form.svg';"></img></a></li>
+			<li><a href="location.html"><img class="buttons" src="media/buttons/location.svg" onmouseover="this.src='media/buttons/locationHover.svg';" onmouseout="this.src='media/buttons/location.svg';"></img></a></li>
 		</menu>
 	</div>
 
@@ -49,7 +49,7 @@
 				</video>
 				
 				<script>
-				document.getElementsByTagName('video')[0].volume = 0.2;
+					document.getElementsByTagName('video')[0].volume = 0.2;
 				</script>			
 			</div>
 	</div>		
