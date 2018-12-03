@@ -2,13 +2,10 @@
 <html>
 
 <head>
-	<title>WWW&Internet2018</title>
+	<title>Video</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	
-</head>
-
 <body>
-	
+
 	<header>
 		<script>
 			function allowDrop(ev) {
@@ -38,31 +35,25 @@
 
 	<div id="navigation">
 		<menu>
-			<li><img src="media/buttons/homeActive.svg" class="active"></img></li>
-			<li><a href="video.html"><img class="media"></img></a></li>
+			<li><a href="index.html"><img class="home"></a></li>
+			<li><img src="media/buttons/videoActive.svg" class="active"></img></li>
 			<li><a href="form.html"><img class="form"></img></a></li>
 			<li><a href="location.html"><img class="location"></img></a></li>
 		</menu>
 	</div>
-	
+
 	<div id="mainblock">
-		<div id="mainText">
-			<p>
-				Welcome to this website	<br>				
-				This website was made for the WWW ja Internet course 2018 of Kajaani University of Applied Sciences.<br>
-				The site's features include:<br>
-				<ul>
-					<li>a Draggable logo inside the header.</li>
-					<li>an Awesome gameplay video on the video page.</li>
-					<li>a Form that checks if you filled any information on the form page.</li>
-					<li>a Geolocation checker that can be found on the location page.</li>
-				</ul>
-			</p>
-		</div>
-	</div>
-
+			<div id="vid">
+				<video width="100%" height="auto" controls>
+				  <source src="media/gameplay.mp4" type="video/mp4">
+				</video>
+				
+				<script>
+				document.getElementsByTagName('video')[0].volume = 0.2;
+				</script>			
+			</div>
+	</div>		
 </body>
-
-
-
+	
+</head>	
 </html>

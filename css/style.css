@@ -1,10 +1,6 @@
-/*Affects everything inside html tags*/
-html{
-
-}
+@font-face { font-family: chango; src: url(fonts/chango-regular.tff);}
 
 body {
-	/*background-image: url(../media/vectorTest.svg);*/
 	background-repeat: no-repeat;
     background-size: 100%;
 	background-color: #1D4417;
@@ -14,8 +10,6 @@ header {
 	background-color:#2E9940;
 	margin: 80px -10px auto -10px;
 	height: 100px;
-	color: yellow;
-	/*position:fixed;*/
 }
 
 #Logo {
@@ -33,39 +27,107 @@ header {
 
 td {
 	width:25%;
-	/*border: 2px solid black;*/
 	text-align:center;
 }
 
+#navigation {
+	font-size: 32px;
+	margin:20px auto auto auto;
+	display:block;
+	list-style:none;
+	height:70px;
+	width: 70%;
+	text-align:center;
+}
 
+navigation menu {
+	margin:1px 1px 1px 1px;
+}
+
+#navigation li {
+	margin:1px 10px 1px 10px;
+	display:inline;
+}
+
+.home {
+	content:url(../media/buttons/home.svg);
+	width:20%;
+	height:20%;
+}
+
+.home:hover {
+	content:url(../media/buttons/homeHover.svg);
+}
+
+.media {
+	content:url(../media/buttons/video.svg);
+	width:20%;
+	height:20%;
+}
+
+.media:hover {
+	content:url(../media/buttons/videoHover.svg);
+}
+
+.form {
+	content:url(../media/buttons/form.svg);
+	width:20%;
+	height:20%;
+}
+
+.form:hover {
+	content:url(../media/buttons/formHover.svg);
+}
+
+.location {
+	content:url(../media/buttons/location.svg);
+	width:20%;
+	height:20%;
+}
+
+.location:hover {
+	content:url(../media/buttons/locationHover.svg);
+}
+
+.active {
+	width:20%;
+	height:20%;
+}
 
 #mainblock {
-	margin:80px auto auto auto;
-	/*outline: 2px solid black;*/
+	margin:5% auto 5% auto;
 	background:#2E9940;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	width: 70%;
 }
 
-.box {	
-	display: block;
-	height: 300px;
-	width: 40%;
-	margin:20px auto 20px auto;
-	outline: 1px solid black;
+
+
+#mainText{
+	font-family:chango;
+	height:200px;
+	padding:0px 5% 5% 8%;
+	margin:auto;	
+	color:#1D4417;
+	padding:auto;
+	font-size:24px;
 }
 
-#div1 {
-    width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
+.box {	
+	display: block;
+	height: 400px;
+	width: 80%;
+	margin:5% auto 5% auto;
 }
-	
-h1 {
-	text-align: center;
-	font-size:100px;
-	margin-top: 50px;
-	color:green;
+
+#uselessForm{
+	padding: 15% 0% 0% 0%;
+	text-align:center;
+	margin:0 auto;
+}
+
+#vid {
+	margin:auto;
+	width:70%;
 }
